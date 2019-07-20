@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
@@ -14,7 +13,7 @@ const Header = () => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0, color: "salmon" }}>dan edwards</h1>
+      <h1 style={{ margin: 0, color: "#f8633e" }}>dan edwards</h1>
     </div>
   </header>
 )
