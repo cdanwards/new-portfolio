@@ -1,21 +1,22 @@
 import PropTypes from "prop-types"
 import React from "react"
+import styled from "styled-components"
+
+const WhiteHeader = styled.header`
+  background_color: #fff;
+`
 
 const Header = () => (
-  <header
-    style={{
-      background: `white`,
-    }}
-  >
+  <WhiteHeader>
     <div
       style={{
         margin: `0 auto`,
-        padding: `1.45rem 1.0875rem`,
+        padding: `3%`,
       }}
     >
       <h1 style={{ margin: 0, color: "#f8633e" }}>dan edwards</h1>
     </div>
-  </header>
+  </WhiteHeader>
 )
 
 Header.propTypes = {

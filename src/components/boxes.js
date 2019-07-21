@@ -1,105 +1,95 @@
 import PropTypes from "prop-types"
 import React from "react"
 
-import styles from "./boxes.module.css"
+import styled from "styled-components"
 
-console.log(styles)
+const WhiteText = styled.p`
+  color: #fff;
+  max-width: 400px;
+`
+
+const Whiteh1 = styled.h1`
+  color: #fff;
+`
+
+const Container = styled.div`
+  padding: 3%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+`
+
+const RowContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+`
+const BoxContainer = styled.div`
+  flex-grow: 1;
+  min-height: 300px;
+  padding: 20px;
+`
+
+const OrangeBox = styled.div`
+  flex-grow: 1;
+  min-height: 300px;
+  padding: 20px;
+  background: #2e68d3;
+`
+const BlueBox = styled.div`
+  flex-grow: 1;
+  min-height: 300px;
+  padding: 20px;
+  background: #f8633e;
+`
+const BrownBox = styled.div`
+  flex-grow: 1;
+  min-height: 300px;
+  padding: 20px;
+  background: #b68d6d;
+`
 
 const Boxes = () => (
-  <div
-    style={{
-      padding: "3%",
-      display: "flex",
-      flexDirection: "row",
-      flexWrap: "wrap",
-    }}
-  >
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        flexWrap: "wrap",
-        width: `100%`,
-      }}
-    >
-      <div
-        style={{
-          flexGrow: 1,
-          minHeight: "300px",
-          background: "#2e68d3",
-          padding: "10px",
-        }}
-      >
-        <h1>hello!</h1>
-        <p className={styles.bodytext}>Thanks for stopping by!</p>
-        <p>
+  <Container>
+    <RowContainer>
+      <OrangeBox>
+        <Whiteh1>hello!</Whiteh1>
+        <WhiteText>Thanks for stopping by!</WhiteText>
+        <WhiteText>
           My name is Dan Edwards and I'm a full-stack developer based out of
           Greenville, SC.
-        </p>
-        <p>
+        </WhiteText>
+        <WhiteText>
           I'm passionate about building great user experiences, created fun and
           clean designs, and solving difficult problems.
-        </p>
-      </div>
-      <div
-        style={{
-          flexGrow: 1,
-          minHeight: "300px",
-          padding: "10px",
-        }}
-      >
+        </WhiteText>
+      </OrangeBox>
+      <BoxContainer>
         <h1>Hi people</h1>
-      </div>
-    </div>
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        flexWrap: "wrap",
-        width: `100%`,
-      }}
-    >
-      <div
-        style={{
-          flexGrow: 1,
-          minHeight: "300px",
-          padding: "10px",
-          overflowWrap: "break-word",
-        }}
-      >
+      </BoxContainer>
+    </RowContainer>
+    <RowContainer>
+      <BoxContainer>
         <h1>Hi people</h1>
-      </div>
-      <div
-        style={{
-          flexGrow: 1,
-          minHeight: "300px",
-          background: "#f8633e",
-          padding: "10px",
-        }}
-      >
-        <h1 style={{ color: "white" }}> about me </h1>
-        <p style={{ color: "white", maxWidth: "400px" }}>
+      </BoxContainer>
+      <BlueBox>
+        <Whiteh1> about me </Whiteh1>
+        <WhiteText>
           When I'm not developing, I enjoy improving our fixer-upper of a house,
           going on adventures with my wonderful wife, and playing slightly above
           average Magic The Gathering.
-        </p>
-      </div>
-    </div>
-    <div
-      style={{
-        flexGrow: 1,
-        minHeight: "300px",
-        background: "#b68d6d",
-        padding: "10px",
-      }}
-    >
-      <h1 className="bodyText">my work</h1>
-      <p className="bodyText">
+        </WhiteText>
+      </BlueBox>
+    </RowContainer>
+    <BrownBox>
+      <Whiteh1>my work</Whiteh1>
+      <WhiteText>
         Check out some of the things I've worked on and where else you can find
         me!
-      </p>
-    </div>
-  </div>
+      </WhiteText>
+    </BrownBox>
+  </Container>
 )
 
 Boxes.propTypes = {
