@@ -3,13 +3,24 @@ import React from "react"
 
 import styled from "styled-components"
 
+import Planet from "./planet"
+
 const WhiteText = styled.p`
   color: #fff;
   max-width: 400px;
 `
 
+const BlueText = styled.p`
+  color: #2e68d3;
+  max-width: 400px;
+`
+
 const Whiteh1 = styled.h1`
   color: #fff;
+`
+
+const Blueh1 = styled.h1`
+  color: #2e68d3;
 `
 
 const Container = styled.div`
@@ -26,6 +37,7 @@ const RowContainer = styled.div`
   width: 100%;
 `
 const BoxContainer = styled.div`
+  overflow: hidden;
   flex-grow: 1;
   min-height: 300px;
   padding: 20px;
@@ -35,19 +47,13 @@ const OrangeBox = styled.div`
   flex-grow: 1;
   min-height: 300px;
   padding: 20px;
-  background: #2e68d3;
+  background: #f8633e;
 `
 const BlueBox = styled.div`
   flex-grow: 1;
   min-height: 300px;
   padding: 20px;
-  background: #f8633e;
-`
-const BrownBox = styled.div`
-  flex-grow: 1;
-  min-height: 300px;
-  padding: 20px;
-  background: #b68d6d;
+  background: #2e68d3;
 `
 
 const Boxes = () => (
@@ -66,7 +72,7 @@ const Boxes = () => (
         </WhiteText>
       </OrangeBox>
       <BoxContainer>
-        <h1>Hi people</h1>
+        <Planet />
       </BoxContainer>
     </RowContainer>
     <RowContainer>
@@ -82,13 +88,13 @@ const Boxes = () => (
         </WhiteText>
       </BlueBox>
     </RowContainer>
-    <BrownBox>
-      <Whiteh1>my work</Whiteh1>
-      <WhiteText>
+    <BoxContainer>
+      <Blueh1>my work</Blueh1>
+      <BlueText>
         Check out some of the things I've worked on and where else you can find
         me!
-      </WhiteText>
-    </BrownBox>
+      </BlueText>
+    </BoxContainer>
   </Container>
 )
 
