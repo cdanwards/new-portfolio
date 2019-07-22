@@ -33,6 +33,7 @@ const rotateMoon = keyframes`
 
 const AnimationContainer = styled.div`
   background_color: #1b2b2f;
+  min-width: 300px;
   display: flex;
   position: relative;
 `
@@ -42,17 +43,15 @@ const Earth = styled.div`
   width: 100px;
   border-radius: 50%;
   background-color: #3380b5;
-  position: absolute;
+  position: relative;
   left: 50%;
-  top: 50%;
-  margin-top: 50%;
+  top: 130px;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   overflow: hidden;
   z-index: 2;
   box-shadow: inset -70px 0px rgba(0, 0, 0, 0.2),
-    0 0 0 50px rgba(20, 106, 221, 0.1), 0 0 0 100px rgba(20, 106, 221, 0.1),
-    0 0 0 150px rgba(20, 106, 221, 0.1);
+    0 0 0 50px rgba(20, 106, 221, 0.1), 0 0 0 100px rgba(20, 106, 221, 0.1);
 
   &:before {
     content: "";
@@ -105,7 +104,6 @@ const Earth = styled.div`
 `
 
 const EarthShadow = styled.div`
-  overflow: hidden;
   height: 100%;
   width: 100%;
   border-radius: 50%;
@@ -121,8 +119,7 @@ const Moon = styled.div`
   border-radius: 50%;
   background-color: #a5a5a5;
   position: absolute;
-  margin-top: 50%;
-  top: 50%;
+  top: 130px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
