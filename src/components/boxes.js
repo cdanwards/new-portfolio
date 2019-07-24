@@ -4,6 +4,8 @@ import React from "react"
 import styled from "styled-components"
 
 import Planet from "./planet"
+import Espresso from "./espresso"
+import Work from "./work"
 
 const WhiteText = styled.p`
   color: #fff;
@@ -39,8 +41,8 @@ const RowContainer = styled.div`
 const BoxContainer = styled.div`
   overflow: hidden;
   flex-grow: 1;
-  min-height: 300px;
-  padding: 20px;
+  min-height: 350px;
+  padding: 40px;
 `
 
 const OrangeBox = styled.div`
@@ -77,7 +79,7 @@ const Boxes = () => (
     </RowContainer>
     <RowContainer>
       <BoxContainer>
-        <h1>Hi people</h1>
+        <Espresso />
       </BoxContainer>
       <BlueBox>
         <Whiteh1> about me </Whiteh1>
@@ -94,6 +96,7 @@ const Boxes = () => (
         Check out some of the things I've worked on and where else you can find
         me!
       </BlueText>
+      <Work />
     </BoxContainer>
   </Container>
 )

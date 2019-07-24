@@ -31,7 +31,13 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer style={{ textAlign: "center", justifyContent: "center" }}>
+        <footer
+          style={{
+            textAlign: "center",
+            justifyContent: "center",
+            color: "#b68d6d",
+          }}
+        >
           © Dan Edwards {new Date().getFullYear()}
         </footer>
       </div>
