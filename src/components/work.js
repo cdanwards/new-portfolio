@@ -25,7 +25,7 @@ const StyledA = styled.a`
   overflow: hidden;
   flex-grow: 1;
   width: 350px;
-  padding: 40px;
+  padding: 10px;
   background: #b68d6d;
 
   &:hover {

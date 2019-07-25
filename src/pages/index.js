@@ -6,7 +6,7 @@ import Boxes from "../components/boxes"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Dan Edwards" />
     <Boxes />
   </Layout>
 )
