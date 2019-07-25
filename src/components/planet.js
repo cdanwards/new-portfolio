@@ -31,13 +31,6 @@ const rotateMoon = keyframes`
   }
 `
 
-const AnimationContainer = styled.div`
-  background_color: #1b2b2f;
-  width: 300px;
-  display: flex;
-  position: absolute;
-`
-
 const Earth = styled.div`
   height: 100px;
   width: 100px;
@@ -118,8 +111,8 @@ const Moon = styled.div`
   width: 20px;
   border-radius: 50%;
   background-color: #a5a5a5;
-  position: absolute;
-  top: 130px;
+  position: relative;
+  top: 20px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -144,12 +137,12 @@ const Moon = styled.div`
 `
 
 const Planet = () => (
-  <AnimationContainer>
+  <>
     <Earth>
       <EarthShadow />
     </Earth>
     <Moon />
-  </AnimationContainer>
+  </>
 )
 
 export default Planet

@@ -7,15 +7,15 @@ const NSImage = () => {
     query {
       placeholderImage: file(relativePath: { eq: "my-dot.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
+          fixed(width: 300) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img fixed={data.placeholderImage.childImageSharp.fixed} />
 }
 
 export default NSImage

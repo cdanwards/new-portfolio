@@ -51,7 +51,8 @@ const BoxContainer = styled.div`
   overflow: hidden;
   flex-grow: 1;
   min-height: 350px;
-  padding: 5%;
+  min-width: 350px;
+  padding: 3%;
 `
 
 const OrangeBox = styled.div`
@@ -74,11 +75,20 @@ const WorkContainer = styled.div`
 `
 
 const PaddedDiv = styled.div`
-  padding: 30px;
-  color: blue;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+`
+
+const StyledA = styled.a`
+  text-decoration: none;
+  padding: 4%;
+  color: #2e68d3;
 
   &:hover {
-    color: salmon;
+    color: #f8633e;
   }
 `
 
@@ -124,10 +134,18 @@ const Boxes = () => (
     </WorkContainer>
     <Work />
     <PaddedDiv>
-      <FaGithub />
-      <FaLinkedinIn />
-      <FaTwitter />
-      <FaPaperPlane />
+      <StyledA href="https://github.com/cdanwards">
+        <FaGithub />
+      </StyledA>
+      <StyledA href="https://www.linkedin.com/in/dan-edwards-64776642/">
+        <FaLinkedinIn />
+      </StyledA>
+      <StyledA href="https://twitter.com/cdanwards">
+        <FaTwitter />
+      </StyledA>
+      <StyledA href="mailto:cdaniel.edwards@gmail.com">
+        <FaPaperPlane />
+      </StyledA>
     </PaddedDiv>
   </Container>
 )

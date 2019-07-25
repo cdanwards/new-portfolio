@@ -62,16 +62,10 @@ const smokeSecond = keyframes`
   }
 `
 
-const AnimationContainer = styled.div`
-  background_color: #1b2b2f;
-  display: flex;
-  position: relative;
-`
-
 const CoffeeHeader = styled.div`
   width: 300px;
   height: 80px;
-  position: absolute;
+  position: relative;
   top: 0;
   background-color: #ddcfcc;
   border-radius: 10px;
@@ -129,8 +123,7 @@ const Details = styled.div`
 const Medium = styled.div`
   width: 270px;
   height: 160px;
-  position: absolute;
-  top: 80px;
+  position: relative;
   left: 15px;
   background-color: #bcb0af;
 
@@ -278,8 +271,7 @@ const SmokeFour = styled.div`
 const Footer = styled.div`
   width: 300px;
   height: 15px;
-  position: absolute;
-  top: 240px;
+  position: relative;
   background-color: #f8633e;
   border-radius: 10px;
 
@@ -294,7 +286,7 @@ const Footer = styled.div`
 `
 
 const Espresso = () => (
-  <AnimationContainer>
+  <>
     <CoffeeHeader>
       <ButtonOne />
       <ButtonTwo />
@@ -312,7 +304,7 @@ const Espresso = () => (
       <Cup />
     </Medium>
     <Footer />
-  </AnimationContainer>
+  </>
 )
 
 export default Espresso
