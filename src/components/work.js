@@ -1,7 +1,6 @@
 import React from "react"
 
 import styled from "styled-components"
-import { FaGithub, FaTwitter, FaLinkedinIn, FaPaperPlane } from "react-icons/fa"
 
 import Rendezvous from "./rendezvous"
 import NSImage from "./nsimage"
@@ -16,46 +15,38 @@ const Container = styled.div`
   justify-content: space-between;
 `
 
-const BoxContainer = styled.div`
-  overflow: hidden;
+const WhiteH1 = styled.h2`
+  color: #fff;
+`
+
+const StyledA = styled.a`
+  text-decoration: none;
   text-align: center;
-  min-height: 350px;
+  overflow: hidden;
+  flex-grow: 1;
   width: 350px;
-`
-
-const BrownH1 = styled.h1`
-  color: #b68d6d;
-`
-
-const PaddedDiv = styled.div`
-  padding: 30px;
-  color: blue;
+  padding: 40px;
+  background: #b68d6d;
 
   &:hover {
-    color: salmon;
+    background: #f8633e;
   }
 `
 
 const Work = () => (
   <Container>
-    <BoxContainer>
-      <BrownH1>Apollos Project</BrownH1>
-      <Apollos />
-    </BoxContainer>
-    <BoxContainer>
-      <BrownH1>NewSpring Apollos</BrownH1>
+    <StyledA href="https://my.newspring.cc">
+      <WhiteH1>NewSpring Apollos</WhiteH1>
       <NSImage />
-    </BoxContainer>
-    <BoxContainer>
-      <BrownH1>rendezvous</BrownH1>
+    </StyledA>
+    <StyledA href="https://apollosapp.io/">
+      <WhiteH1>Apollos Project</WhiteH1>
+      <Apollos />
+    </StyledA>
+    <StyledA href="https://cdanwards.github.io">
+      <WhiteH1>rendezvous</WhiteH1>
       <Rendezvous />
-    </BoxContainer>
-    <PaddedDiv>
-      <FaGithub />
-      <FaLinkedinIn />
-      <FaTwitter />
-      <FaPaperPlane />
-    </PaddedDiv>
+    </StyledA>
   </Container>
 )
 
