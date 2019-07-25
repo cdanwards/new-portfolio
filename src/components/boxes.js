@@ -2,6 +2,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import styled from "styled-components"
+import { FaGithub, FaTwitter, FaLinkedinIn, FaPaperPlane } from "react-icons/fa"
 
 import Planet from "./planet"
 import Espresso from "./espresso"
@@ -58,6 +59,15 @@ const BlueBox = styled.div`
   background: #2e68d3;
 `
 
+const PaddedDiv = styled.div`
+  padding: 30px;
+  color: blue;
+
+  &:hover {
+    color: salmon;
+  }
+`
+
 const Boxes = () => (
   <Container>
     <RowContainer>
@@ -97,6 +107,12 @@ const Boxes = () => (
         me!
       </BlueText>
       <Work />
+      <PaddedDiv>
+        <FaGithub />
+        <FaLinkedinIn />
+        <FaTwitter />
+        <FaPaperPlane />
+      </PaddedDiv>
     </BoxContainer>
   </Container>
 )

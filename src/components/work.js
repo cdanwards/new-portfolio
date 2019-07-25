@@ -1,7 +1,7 @@
-import PropTypes from "prop-types"
 import React from "react"
 
 import styled from "styled-components"
+import { FaGithub, FaTwitter, FaLinkedinIn, FaPaperPlane } from "react-icons/fa"
 
 import Rendezvous from "./rendezvous"
 import NSImage from "./nsimage"
@@ -13,19 +13,27 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justifycontent: space-between;
+  justify-content: space-between;
 `
 
 const BoxContainer = styled.div`
   overflow: hidden;
-  flex-grow: 1;
+  text-align: center;
   min-height: 350px;
   width: 350px;
-  padding: 40px;
 `
 
 const BrownH1 = styled.h1`
   color: #b68d6d;
+`
+
+const PaddedDiv = styled.div`
+  padding: 30px;
+  color: blue;
+
+  &:hover {
+    color: salmon;
+  }
 `
 
 const Work = () => (
@@ -42,6 +50,12 @@ const Work = () => (
       <BrownH1>rendezvous</BrownH1>
       <Rendezvous />
     </BoxContainer>
+    <PaddedDiv>
+      <FaGithub />
+      <FaLinkedinIn />
+      <FaTwitter />
+      <FaPaperPlane />
+    </PaddedDiv>
   </Container>
 )
 
