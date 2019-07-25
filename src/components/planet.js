@@ -33,9 +33,9 @@ const rotateMoon = keyframes`
 
 const AnimationContainer = styled.div`
   background_color: #1b2b2f;
-  min-width: 300px;
+  width: 300px;
   display: flex;
-  position: relative;
+  position: absolute;
 `
 
 const Earth = styled.div`

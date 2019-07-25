@@ -64,7 +64,6 @@ const smokeSecond = keyframes`
 
 const AnimationContainer = styled.div`
   background_color: #1b2b2f;
-  min-width: 300px;
   display: flex;
   position: relative;
 `
@@ -74,7 +73,6 @@ const CoffeeHeader = styled.div`
   height: 80px;
   position: absolute;
   top: 0;
-  left: 15%;
   background-color: #ddcfcc;
   border-radius: 10px;
 `
@@ -133,7 +131,7 @@ const Medium = styled.div`
   height: 160px;
   position: absolute;
   top: 80px;
-  left: 18%;
+  left: 15px;
   background-color: #bcb0af;
 
   &:before {
@@ -280,19 +278,17 @@ const SmokeFour = styled.div`
 const Footer = styled.div`
   width: 300px;
   height: 15px;
-  position: relative;
+  position: absolute;
   top: 240px;
-  left: 15%;
   background-color: #f8633e;
   border-radius: 10px;
 
   &:after {
     content: "";
-    width: 106%;
+    width: 300px;
     height: 26px;
     position: absolute;
     bottom: -25px;
-    left: -8px;
     background-color: #000;
   }
 `

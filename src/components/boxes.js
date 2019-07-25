@@ -38,11 +38,19 @@ const RowContainer = styled.div`
   flex-wrap: wrap;
   width: 100%;
 `
+
+const RowReverseContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  width: 100%;
+`
+
 const BoxContainer = styled.div`
   overflow: hidden;
   flex-grow: 1;
   min-height: 350px;
-  padding: 40px;
+  padding: 5%;
 `
 
 const OrangeBox = styled.div`
@@ -58,6 +66,12 @@ const BlueBox = styled.div`
   background: #2e68d3;
 `
 
+const WorkContainer = styled.div`
+  overflow: hidden;
+  flex-grow: 1;
+  padding: 3%;
+`
+
 const Boxes = () => (
   <Container>
     <RowContainer>
@@ -70,34 +84,35 @@ const Boxes = () => (
         </WhiteText>
         <WhiteText>
           I'm passionate about building great user experiences, created fun and
-          clean designs, and solving difficult problems.
+          clean designs, and solving difficult problems. I'm currently digging
+          more into Gatsby.js and CSS Animations.
         </WhiteText>
       </OrangeBox>
       <BoxContainer>
         <Planet />
       </BoxContainer>
     </RowContainer>
-    <RowContainer>
+    <RowReverseContainer>
       <BoxContainer>
         <Espresso />
       </BoxContainer>
       <BlueBox>
         <Whiteh1> about me </Whiteh1>
         <WhiteText>
-          When I'm not developing, I enjoy improving our fixer-upper of a house,
-          going on adventures with my wonderful wife, and playing slightly above
-          average Magic The Gathering.
+          When I'm not developing, you can find me improving our fixer-upper of
+          a house, going on adventures with my wonderful wife, and playing
+          slightly above average Magic The Gathering.
         </WhiteText>
       </BlueBox>
-    </RowContainer>
-    <BoxContainer>
+    </RowReverseContainer>
+    <WorkContainer>
       <Blueh1>my work</Blueh1>
       <BlueText>
         Check out some of the things I've worked on and where else you can find
         me!
       </BlueText>
-      <Work />
-    </BoxContainer>
+    </WorkContainer>
+    <Work />
   </Container>
 )
 

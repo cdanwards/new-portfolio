@@ -1,4 +1,3 @@
-import PropTypes from "prop-types"
 import React from "react"
 
 import styled from "styled-components"
@@ -16,32 +15,38 @@ const Container = styled.div`
   justifycontent: space-between;
 `
 
-const BoxContainer = styled.div`
-  overflow: hidden;
-  flex-grow: 1;
-  min-height: 350px;
-  width: 350px;
-  padding: 40px;
+const WhiteH1 = styled.h2`
+  color: #fff;
 `
 
-const BrownH1 = styled.h1`
-  color: #b68d6d;
+const StyledA = styled.a`
+  text-decoration: none;
+  text-align: center;
+  overflow: hidden;
+  flex-grow: 1;
+  width: 350px;
+  padding: 40px;
+  background: #b68d6d;
+
+  &:hover {
+    background: #f8633e;
+  }
 `
 
 const Work = () => (
   <Container>
-    <BoxContainer>
-      <BrownH1>Apollos Project</BrownH1>
-      <Apollos />
-    </BoxContainer>
-    <BoxContainer>
-      <BrownH1>NewSpring Apollos</BrownH1>
+    <StyledA href="https://my.newspring.cc">
+      <WhiteH1>NewSpring Apollos</WhiteH1>
       <NSImage />
-    </BoxContainer>
-    <BoxContainer>
-      <BrownH1>rendezvous</BrownH1>
+    </StyledA>
+    <StyledA href="https://apollosapp.io/">
+      <WhiteH1>Apollos Project</WhiteH1>
+      <Apollos />
+    </StyledA>
+    <StyledA href="https://cdanwards.github.io">
+      <WhiteH1>rendezvous</WhiteH1>
       <Rendezvous />
-    </BoxContainer>
+    </StyledA>
   </Container>
 )
 
