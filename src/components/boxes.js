@@ -94,6 +94,15 @@ const StyledA = styled.a`
   }
 `
 
+const StyledA2 = styled.a`
+  text-decoration: none;
+  color: #fff;
+
+  &:hover {
+    color: #2e68d3;
+  }
+`
+
 const Boxes = () => (
   <Container>
     <RowContainer>
@@ -102,12 +111,13 @@ const Boxes = () => (
         <WhiteText>Thanks for stopping by!</WhiteText>
         <WhiteText>
           My name is Dan Edwards and I'm a full-stack developer based out of
-          Greenville, SC.
+          Greenville, SC currently working as a UI Engineer @{" "}
+          <StyledA2 href="https://orangebees.com">Orange Bees</StyledA2>.
         </WhiteText>
         <WhiteText>
           I'm passionate about providing great user experiences, creating fun
           and clean designs, and solving difficult problems. I'm currently
-          learning more about Gatsby.js and CSS Animations.
+          learning Angular, NestJS and all things Docker.
         </WhiteText>
       </OrangeBox>
       <BoxContainer>
