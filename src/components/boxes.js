@@ -1,12 +1,11 @@
+import { FaGithub, FaLinkedinIn, FaPaperPlane, FaTwitter } from "react-icons/fa"
+
+import Espresso from "./espresso"
+import Planet from "./planet"
 import PropTypes from "prop-types"
 import React from "react"
-
-import styled from "styled-components"
-import { FaGithub, FaTwitter, FaLinkedinIn, FaPaperPlane } from "react-icons/fa"
-
-import Planet from "./planet"
-import Espresso from "./espresso"
 import Work from "./work"
+import styled from "styled-components"
 
 const WhiteText = styled.p`
   color: #fff;
@@ -111,13 +110,13 @@ const Boxes = () => (
         <WhiteText>Thanks for stopping by!</WhiteText>
         <WhiteText>
           My name is Dan Edwards and I'm a full-stack developer based out of
-          Greenville, SC currently working as a UI Engineer @{" "}
+          Greenville, SC currently working as a Software Engineer @{" "}
           <StyledA2 href="https://orangebees.com">Orange Bees</StyledA2>.
         </WhiteText>
         <WhiteText>
           I'm passionate about providing great user experiences, creating fun
           and clean designs, and solving difficult problems. I'm currently
-          learning Angular, NestJS and all things Docker.
+          learning Angular, Docker and Flutter.
         </WhiteText>
       </OrangeBox>
       <BoxContainer>
