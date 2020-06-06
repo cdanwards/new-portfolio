@@ -69,6 +69,7 @@ const CoffeeHeader = styled.div`
   top: 0;
   background-color: #ddcfcc;
   border-radius: 10px;
+  left: 18%;
 `
 
 const Button = styled.div`
@@ -126,6 +127,8 @@ const Medium = styled.div`
   position: relative;
   left: 15px;
   background-color: #bcb0af;
+
+  left: calc(18% + 15px);
 
   &:before {
     content: "";
@@ -274,6 +277,7 @@ const Footer = styled.div`
   position: relative;
   background-color: #f8633e;
   border-radius: 10px;
+  left: 18%;
 
   &:after {
     content: "";

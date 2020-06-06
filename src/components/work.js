@@ -35,7 +35,7 @@ const StyledA = styled.a`
 
 const Work = () => (
   <Container>
-    <StyledA href="https://my.newspring.cc">
+    <StyledA href="https://newspring.cc/newspring/apps">
       <WhiteH1>NewSpring Apollos</WhiteH1>
       <NSImage />
     </StyledA>

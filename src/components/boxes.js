@@ -52,8 +52,8 @@ const BoxContainer = styled.div`
   overflow: hidden;
   flex-grow: 1;
   min-height: 350px;
-  min-width: 350px;
-  padding: 3%;
+  min-width: 450px;
+  padding-top: 10%
 `
 
 const OrangeBox = styled.div`
@@ -86,7 +86,7 @@ const PaddedDiv = styled.div`
 
 const StyledA = styled.a`
   text-decoration: none;
-  padding: 4%;
+  padding: 6%;
   color: #2e68d3;
 
   &:hover {
@@ -107,17 +107,21 @@ const Boxes = () => (
         <WhiteText>
           I'm passionate about providing great user experiences, creating fun
           and clean designs, and solving difficult problems. I'm currently
-          learning more about Gatsby.js and CSS Animations.
+          learning more about Flutter, Vue and TypeScript.
         </WhiteText>
       </OrangeBox>
-      <BoxContainer>
-        <Planet />
-      </BoxContainer>
+      <div style={{ margin: "0 auto"}}>
+        <BoxContainer>
+          <Planet />
+        </BoxContainer>
+      </div>
     </RowContainer>
     <RowReverseContainer>
-      <BoxContainer>
-        <Espresso />
-      </BoxContainer>
+      <div style={{ margin: "0 auto"}}>
+        <BoxContainer>
+          <Espresso />
+        </BoxContainer>
+      </div>
       <BlueBox>
         <Whiteh1> about me </Whiteh1>
         <WhiteText>
@@ -146,9 +150,6 @@ const Boxes = () => (
       </StyledA>
       <StyledA href="https://www.linkedin.com/in/dan-edwards-64776642/">
         <FaLinkedinIn />
-      </StyledA>
-      <StyledA href="https://twitter.com/cdanwards">
-        <FaTwitter />
       </StyledA>
       <StyledA href="mailto:cdaniel.edwards@gmail.com">
         <FaPaperPlane />

@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 const NSImage = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "my-dot.png" }) {
+      placeholderImage: file(relativePath: { eq: "newspring-app.jpg" }) {
         childImageSharp {
           fixed(width: 300) {
             ...GatsbyImageSharpFixed
