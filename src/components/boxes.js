@@ -109,7 +109,7 @@ const Boxes = () => (
         <Whiteh1>hello!</Whiteh1>
         <WhiteText>Thanks for stopping by!</WhiteText>
         <WhiteText>
-          My name is Dan Edwards and I'm a full-stack developer based out of
+          My name is Dan Edwards and I'm a software developer based out of
           Greenville, SC currently working as a Software Engineer @{" "}
           <StyledA2 href="https://orangebees.com">Orange Bees</StyledA2>.
         </WhiteText>
