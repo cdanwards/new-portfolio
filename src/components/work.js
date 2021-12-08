@@ -43,7 +43,7 @@ const Work = () => (
       <WhiteH1>Apollos Project</WhiteH1>
       <Apollos />
     </StyledA>
-    <StyledA href="https://cdanwards.github.io/rendezvous">
+    <StyledA href="https://github.com/cdanwards/rendezvous">
       <WhiteH1>rendezvous</WhiteH1>
       <Rendezvous />
     </StyledA>
