@@ -52,7 +52,7 @@ const BoxContainer = styled.div`
   flex-grow: 1;
   min-height: 350px;
   min-width: 450px;
-  padding-top: 10%
+  padding-top: 10%;
 `
 
 const OrangeBox = styled.div`
@@ -110,23 +110,23 @@ const Boxes = () => (
         <WhiteText>Thanks for stopping by!</WhiteText>
         <WhiteText>
           My name is Dan Edwards and I'm a software developer based out of
-          Greenville, SC currently working as a Javascript Engineer @{" "}
-          <StyledA2 href="https://mywell.org">My Well</StyledA2>.
+          Greenville, SC currently working as a Senior Software Engineer @{" "}
+          <StyledA2 href="https://infinite.red">Infinite Red</StyledA2>.
         </WhiteText>
         <WhiteText>
           I'm passionate about providing great user experiences, creating fun
           and clean designs, and solving difficult problems. I'm currently
-          learning more about Remix, Web3 and NextJS.
+          learning more about React Native performance, Typescript and Golang.
         </WhiteText>
       </OrangeBox>
-      <div style={{ margin: "0 auto"}}>
+      <div style={{ margin: "0 auto" }}>
         <BoxContainer>
           <Planet />
         </BoxContainer>
       </div>
     </RowContainer>
     <RowReverseContainer>
-      <div style={{ margin: "0 auto"}}>
+      <div style={{ margin: "0 auto" }}>
         <BoxContainer>
           <Espresso />
         </BoxContainer>
@@ -135,14 +135,13 @@ const Boxes = () => (
         <Whiteh1> about me </Whiteh1>
         <WhiteText>
           When I'm not developing, you can find me going on adventures with my
-          wonderful wife and one year old daughter, tackling projects for our 
-          fixer-upper of a house, and playing slightly 
-          above average Magic The Gathering.
+          wonderful wife and two kids, tackling projects for our fixer-upper of
+          a house, and playing slightly above average Magic The Gathering.
         </WhiteText>
         <WhiteText>
-          Since graduating from the Iron Yard Academy and over the course of my career, 
-          I've strived to continuously learn and master my skillset to create 
-          modern web and mobile apps.
+          Since graduating from the Iron Yard Academy and over the course of my
+          career, I've strived to continuously learn and master my skillset to
+          create modern, performant web and mobile apps.
         </WhiteText>
       </BlueBox>
     </RowReverseContainer>
