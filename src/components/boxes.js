@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedinIn, FaPaperPlane, FaTwitter } from "react-icons/fa"
+import { FaGithub, FaLinkedinIn, FaPaperPlane } from "react-icons/fa"
 
 import Espresso from "./espresso"
 import Planet from "./planet"
@@ -45,6 +45,7 @@ const RowReverseContainer = styled.div`
   flex-wrap: wrap-reverse;
   width: 100%;
   padding-bottom: 2%;
+  margin-top: 45px;
 `
 
 const BoxContainer = styled.div`
@@ -60,12 +61,20 @@ const OrangeBox = styled.div`
   min-height: 300px;
   padding: 20px;
   background: #f8633e;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 `
 const BlueBox = styled.div`
   flex-grow: 1;
   min-height: 300px;
   padding: 20px;
   background: #2e68d3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 `
 
 const WorkContainer = styled.div`
@@ -145,14 +154,14 @@ const Boxes = () => (
         </WhiteText>
       </BlueBox>
     </RowReverseContainer>
-    <WorkContainer>
+    {/* <WorkContainer>
       <Blueh1>my work</Blueh1>
       <BlueText style={{ margin: "0 auto" }}>
         Check out some of the things I've worked on and where else you can find
         me!
       </BlueText>
-    </WorkContainer>
-    <Work />
+    </WorkContainer> */}
+    {/* <Work /> */}
     <PaddedDiv>
       <StyledA href="https://github.com/cdanwards">
         <FaGithub />
